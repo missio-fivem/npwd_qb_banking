@@ -49,7 +49,7 @@ const Billing = () => {
           divider
           secondaryAction={
             <Stack direction="row">
-              <Tooltip title="Pay">
+              <Tooltip title="Maksa">
                 <IconButton
                   size="small"
                   aria-label="pay"
@@ -58,16 +58,6 @@ const Billing = () => {
                   disabled={invoice.amount > bankBalance}
                 >
                   <CheckCircleRoundedIcon />
-                </IconButton>
-              </Tooltip>
-              <Tooltip title="Decline">
-                <IconButton
-                  size="small"
-                  aria-label="decline"
-                  color="secondary"
-                  onClick={() => handleDeclineInvoice(invoice.id)}
-                >
-                  <CancelRoundedIcon />
                 </IconButton>
               </Tooltip>
             </Stack>
@@ -93,7 +83,7 @@ const Billing = () => {
                   variant="body2"
                   color="text.secondary"
                 >
-                  {` (Sender: ${invoice.sender})`}
+                  {` (Myöntäjä: ${invoice.sender} Syy: ${invoice.reason})`}
                 </Typography>
               </Fragment>
             }

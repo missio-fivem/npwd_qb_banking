@@ -69,7 +69,7 @@ const App = (props: AppProps) => {
         <ThemeSwitchProvider mode={props.theme.palette.mode}>
           <PhoneSnackbar />
           <Container square elevation={0}>
-            <Header>Banking</Header>
+            <Header>Pankki</Header>
             <Content>
               <Route exact path={path}>
                 <Account />
@@ -81,14 +81,14 @@ const App = (props: AppProps) => {
 
             <BottomNavigation value={page} onChange={handleChange} showLabels>
               <BottomNavigationAction
-                label={'Banking'}
+                label={'Tili'}
                 value={path}
                 component={NavLink}
                 icon={<AccountBalanceWallet />}
                 to={path}
               />
               <BottomNavigationAction
-                label={'Billing'}
+                label={'Laskut'}
                 value={`${path}/billing`}
                 color="secondary"
                 component={NavLink}
