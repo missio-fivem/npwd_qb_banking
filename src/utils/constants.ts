@@ -1,4 +1,4 @@
-import { IContacts, IInvoice } from '../types/bank'
+import { IContacts, IInvoice } from '../types/bank';
 
 export const MockContacts: IContacts[] = [
   {
@@ -28,18 +28,20 @@ export const MockContacts: IContacts[] = [
 export const MockInvoices: IInvoice[] = [
   {
     id: 1,
-    citizenid: "NSI72784",
+    citizenid: 'NSI72784',
     amount: 200,
-    society: "mechanic",
-    sender: "Sam",
-    sendercitizenid: "PQS14529"
+    society: 'mechanic',
+    sender: 'Sam',
+    sendercitizenid: 'PQS14529',
+    reason: 'test',
   },
   {
     id: 2,
-    citizenid: "NSI72784",
+    citizenid: 'NSI72784',
     amount: 1200,
-    society: "police",
-    sender: "John",
-    sendercitizenid: "DFS14529"
-  }
+    society: 'police',
+    sender: 'John',
+    sendercitizenid: 'DFS14529',
+    reason: 'test',
+  },
 ];
