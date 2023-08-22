@@ -97,8 +97,8 @@ const Account = () => {
                   }
                 },
               }}
-              label="Transfer To"
-              placeholder="Search contacts or enter account number"
+              label="Siirrä"
+              placeholder="Hae yhteystietoja tai anna tilinumero"
               onChange={(e) => setTransferAccount(e.currentTarget.value)}
             />
           )}
@@ -106,7 +106,7 @@ const Account = () => {
 
         <TextField
           id="amount"
-          label="Transfer Amount"
+          label="Tilisiirron määrä"
           value={transferAmmount}
           onChange={handleChange}
           type="number"
@@ -117,7 +117,7 @@ const Account = () => {
           onClick={handleTransfer}
           variant="outlined"
         >
-          Transfer
+          Siirrä
         </Button>
       </TransferArea>
     </BankingPage>
